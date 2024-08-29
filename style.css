@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;   
+}
+.trending-section {
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 84px;}
+
+.trending-cards {
+        display: flex;
+        justify-content: space-between;}
+    
+.trending-card {
+    padding-bottom: 36px;
+    border-radius: 20px;
+    box-shadow: 0px 6px 6px 0px #0000000d;
+    background-color: white;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f9f9f9;
+}
+
+.trending-first {
+        display: flex;
+        gap: 28px;
+        margin-top: 23px;
+        align-items: center;
+        margin-left: 26px;
+        margin-bottom: 28px;
+    }
+    .trending-text {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-left: 26px;
+        margin-bottom: 20px;
+    }
+    .trending-button a {
+        font-size: 12px;
+        font-weight: 700;
+        color: white;
+        padding: 9px 49px;
+        background-color: #262626;
+        cursor: pointer;
+        border-radius: 40px;}
+
+        .trending-first img {
+            border-radius: 100%;}
+           
+            
+     .trending-button {
+                padding: 20px 0 219px 34px;
+                background: url(images/Mask\ group\ 1.png);
+                background-repeat: 1;
+                background-size: cover;
+                background-position: center;
+                border-radius: 20px;}
+
+    .trending-button:nth-child(2) {
+                    background: url(images/Mask\ group\ 2.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    border-radius: 20px;}
+
+
+            
+
+    
