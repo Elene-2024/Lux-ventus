@@ -1,0 +1,376 @@
+  /*general styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9; 
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 84px;
+}
+
+/* topics section */
+.topics-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.topics-title {
+    margin-bottom: 36px; 
+    margin-left: 83px;
+}
+
+.topics-cards {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure cards are in a single row */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    gap: 10px;
+    padding: 0 83px; /* Add space to the left and right of the cards */
+}
+
+.topic-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Distributes space between elements */
+    gap: 20px;
+    width: 204px; /* Fixed width for each card */
+    padding: 20px 15px; /* Adjust padding to fit content */
+    background-color: #ffffff;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    text-align: center; /* Center text inside the card */
+}
+
+.topic-card img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.topic-card h2 {
+    font-size: 16px; /* Adjust font size for titles */
+    margin-bottom: 10px; /* Space between title and button */
+}
+
+.topic-card button {
+    padding: 10px 20px; /* Adjust padding to fit content */
+    background-color: #4ce0d7;
+    color: #262626;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.topic-card:hover {
+
+    transform: translateY(-15px);
+}
+
+.topic-card button {
+    color: #333333; /* Darker text color */
+    padding: 10px 40px;
+    background-color: #4ce0d7;
+    border-radius: 40px;
+    font-size: 12px;
+    font-weight: 700; /* Make the font weight bold */
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.topic-card:hover {
+    background-color: #e0f7f7; /* Very light cyan background */
+    border: 2px solid #4ce0d7; /* Original border color */
+}
+
+
+
+/* Line */
+.line {
+    width: calc(100% - 171px); /* Full width minus 85.5px left and right padding */
+    margin: 50px auto; /* 50px top and bottom, centered horizontally */
+    border: 1px solid; /* Example border, adjust as needed */
+    color: hsla(0, 0%, 74%, 1);
+}
+
+/* Second Section-fashion */
+.second-section {
+    max-width: 1204px;
+    margin: 0 auto 97px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-bottom: 32px;
+    position: relative; /* Ensure positioning context for absolute elements */
+}
+
+.second-but {
+    position: relative; /* Positioning context for button */
+    height: 360px; /* Set a specific height for the container */
+    background: url('./photo7.png') center/cover no-repeat; /* Image fills container */
+    border-radius: 20px;
+    overflow: hidden; /* Hide overflow to ensure the image doesn't affect the layout */
+}
+
+.second-but button {
+    position: absolute;
+    top: 23px; /* Distance from the top */
+    left: 47px; /* Distance from the left */
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 10px 82px;
+    border-radius: 40px;
+    background-color: #262626;
+    border: none;
+}
+
+.second-first {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px 75px 30px 64px;
+}
+
+.second-first div {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+
+.second-first h1 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #f25e5e;
+}
+
+.second-first p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #bcbcbc;
+}
+
+.second-first img {
+    border-radius: 50%;
+}
+
+.second-second {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    margin-left: 64px;
+}
+
+.second-second p {
+    max-width: 800px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #262626;
+}
+
+.second-second h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #262626;
+}
+
+.second-three a {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: 51px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #4ce0d7;
+}
+
+.second-section-date {
+    margin-left: 167px;
+} 
+
+რესპონსიულობა 
+
+/* Mobile Devices */
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .topics-title {
+        margin-left: 0;
+    }
+
+    .topics-cards {
+        padding: 0;
+        gap: 10px;
+    }
+
+    .topic-card {
+        width: 100%; /* Full width for mobile */
+        padding: 20px 10px; /* Adjust padding */
+    }
+
+    .topic-card button {
+        padding: 10px 20px; /* Adjust padding for button */
+    }
+
+    .line {
+        width: calc(100% - 40px); /* Full width minus padding */
+    }
+
+    .second-section {
+        margin: 0 auto 20px; /* Adjust bottom margin */
+    }
+
+    .second-but button {
+        top: 10px;
+        left: 10px;
+        padding: 8px 40px;
+        font-size: 10px;
+    }
+
+    .second-first {
+        padding: 15px;
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .second-first div {
+        gap: 10px; /* Adjust gap */
+    }
+
+    .second-second {
+        margin-left: 0; /* No left margin on mobile */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .second-three a {
+        margin-left: 0; /* Remove left margin */
+        font-size: 10px; /* Adjust font size */
+    }
+}
+
+/* Tablets and Smaller Laptops */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    .topics-title {
+        margin-left: 0;
+    }
+
+    .topics-cards {
+        gap: 20px;
+    }
+
+    .topic-card {
+        width: calc(50% - 10px); /* Two cards per row with gaps */
+        padding: 20px 15px; /* Adjust padding */
+    }
+
+    .line {
+        width: calc(100% - 80px); /* Full width minus padding */
+    }
+
+    .second-section {
+        margin: 0 auto 50px; /* Adjust bottom margin */
+    }
+
+    .second-but button {
+        top: 20px;
+        left: 20px;
+        padding: 10px 60px;
+        font-size: 11px;
+    }
+
+    .second-first {
+        padding: 20px;
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .second-first div {
+        gap: 15px; /* Adjust gap */
+    }
+
+    .second-second {
+        margin-left: 0; /* No left margin */
+    }
+
+    .second-three a {
+        margin-left: 0; /* Remove left margin */
+        font-size: 11px; /* Adjust font size */
+    }
+}
+
+/* Larger Screens */
+@media (min-width: 1025px) {
+    .container {
+        padding: 0 84px;
+    }
+
+    .topics-title {
+        margin-left: 83px;
+    }
+
+    .topics-cards {
+        padding: 0 83px;
+    }
+
+    .topic-card {
+        width: 204px; /* Fixed width for each card */
+    }
+
+    .line {
+        width: calc(100% - 171px); /* Full width minus padding */
+    }
+
+    .second-section {
+        margin: 0 auto 97px; /* Margin for large screens */
+    }
+
+    .second-but button {
+        top: 23px;
+        left: 47px;
+        padding: 10px 82px;
+        font-size: 12px;
+    }
+
+    .second-first {
+        padding: 23px 75px 30px 64px;
+    }
+
+    .second-first div {
+        gap: 21px;
+    }
+
+    .second-second {
+        margin-left: 64px;
+    }
+
+    .second-three a {
+        margin-left: 51px;
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
