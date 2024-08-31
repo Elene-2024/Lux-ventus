@@ -4,73 +4,156 @@
     box-sizing: border-box;
     text-decoration: none;   
 }
-.trending-section {
-    display: flex;
-    flex-direction: column;
-}
-.container {
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 84px;}
 
-.trending-cards {
-        display: flex;
-        justify-content: space-between;}
-    
-.trending-card {
-    padding-bottom: 36px;
-    border-radius: 20px;
-    box-shadow: 0px 6px 6px 0px #0000000d;
-    background-color: white;
-}
 body {
     font-family: "Poppins", sans-serif;
     background-color: #f9f9f9;
 }
 
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 84px;  
+}
+
+.container{
+    margin-top: 2166px;
+    margin-bottom: 1674px;
+}
+.trending-title h1 {
+    margin-bottom: 55px;
+    font-size: 32px;
+    font-weight: 700;
+}
+.trending-first div {
+    display: flex;
+    gap: 167px;
+    padding-right: 90px;
+}
+.trending-first p{
+    font-family: Poppins;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+text-align: left;
+color: #BCBCBC;
+width: 169px;
+height: 21px;
+top: 2481px;
+left: 238px;
+gap: 0px;
+opacity: 0px;
+}
+
+.trending-arrow a {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-left: 14.88px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #4ce0d7;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    } }
+
+.trending-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.trending-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.trending-card {
+    padding-bottom: 36px;
+    border-radius: 20px;
+    box-shadow: 0px 6px 6px 0px #0000000d;
+    background-color: white;
+    width: 48%; 
+    margin-bottom: 20px;
+}
+
 .trending-first {
-        display: flex;
-        gap: 28px;
-        margin-top: 23px;
-        align-items: center;
-        margin-left: 26px;
-        margin-bottom: 28px;
-    }
-    .trending-text {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        margin-left: 26px;
-        margin-bottom: 20px;
-    }
-    .trending-button a {
-        font-size: 12px;
-        font-weight: 700;
-        color: white;
-        padding: 9px 49px;
-        background-color: #262626;
-        cursor: pointer;
-        border-radius: 40px;}
+    display: flex;
+    gap: 28px;
+    margin-top: 23px;
+    align-items: center;
+    margin-left: 26px;
+    margin-bottom: 28px;
+}
+.trending-first time p :first{
+    width: 167px;
+height: 21px;
+top: 2481px;
+left: 490px;
+gap: 0px;
+opacity: 0px;
+}
+.trending-first time p{
+    width: 168px;
+height: 21px;
+top: 2481px;
+left: 1128px;
+gap: 0px;
+opacity: 0px;
 
-        .trending-first img {
-            border-radius: 100%;}
-           
-            
-     .trending-button {
-                padding: 20px 0 219px 34px;
-                background: url(images/Mask\ group\ 1.png);
-                background-repeat: 1;
-                background-size: cover;
-                background-position: center;
-                border-radius: 20px;}
 
-    .trending-button:nth-child(2) {
-                    background: url(images/Mask\ group\ 2.png);
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center;
-                    border-radius: 20px;}
+}
+
+.trending-first img {
+    border-radius: 100%;
+}
+
+.trending-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 26px;
+    margin-bottom: 20px;
+}
+.trending-text p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #262626;
+    max-width: 360px;
+    line-height: 24px;
+}
+.trending-text h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #262626;
+    max-width: 350px;
+    font-family: Poppins;
+    line-height: 39px;
+    
+
+}
+.trending-button {
+    padding: 20px 0 219px 34px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+.trending-button a {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    padding: 9px 49px;
+    background-color: #262626;
+    cursor: pointer;
+    border-radius: 40px;
+}
 
 
             
