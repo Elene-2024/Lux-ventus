@@ -4,14 +4,15 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: Poppins ;
+    flex-shrink: 1;
 
 }
 
  .container {
     max-width: 1440px;
-     width: 100%;
+    width: 100%;
     margin: 0 auto;
-     padding: 0 84px;
+    padding: 0 84px;
 }
 .span--display__block{
     display: block;
@@ -38,6 +39,7 @@ body {
     width: 100%;
     margin: 0 auto;
     margin-bottom: 69px;
+    flex-shrink: 1;
 
 
 }
@@ -47,12 +49,14 @@ body {
     width: 100%;
     height: 368px;
     display: flex;
-    flex-wrap: wrap;
+ 
     background-color: #ffffff;
     border-radius: 20px;
-    gap: 45.5px
+    gap: 45.5px; 
+}
 
-
+.cards--m *{
+    flex-shrink: 1;
 }
 /* სექციის მარცხენა ნაწილი ბექგრაუნდი */
 .cards--m__left1 {
@@ -187,25 +191,32 @@ body {
 .cards--m__right {
     flex-shrink: 1;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
     
+}
+.cards--m__right >* {
+    flex-shrink: 1;
 }
 
 
 
-    /* სექციის მარცხენა ზედა ნაწილი: ლოგო სახელი დატაა */
+    /* სექციის მარჯვენა ზედა ნაწილი: ლოგო სახელი დატაა */
 
 .cards--right__top {
-    
+ 
     margin-top: 25.5px;
     margin-bottom: 35px;
     display: flex;
     align-items: center;
-    flex-basis: 100%;
-    flex-grow: 1;
+ 
     flex-shrink: 1;
  
     
     }
+ .cards--right__top >*{
+    flex-shrink: 1;
+ }
 
 
 
@@ -220,7 +231,7 @@ body {
 .cards--right__top__data{
     display: flex;
 
-    gap: 200px;
+    gap: 189px;
 }
 
 .cards--right__top__data a {
@@ -245,6 +256,7 @@ body {
     line-height: 21px;
     text-align: left;
     color: #BCBCBC;
+    
 
 
  }
@@ -257,7 +269,7 @@ body {
  /* სექციის მაჯვენა შუა ნაწილი H3 სათაური */
 
  .cards--right__titles {
-    width: 543px;
+    max-width: 440px;
     height: 94px;
     font-weight: 700;
 
@@ -269,24 +281,31 @@ body {
     line-height: 39px;
     text-align: left;
 
+
  }
 
 /* სექციის მაჯვენა შუა ნაწილი ტექსტი P  */
 
 .cards--right__text {
-    width: 569px;
+
+    max-width: 440px;
     height: 73px;
     margin-bottom: 9px;
+
+   
 
 }
 
 .cards--right__text p {
+    margin-top: 5px;
     font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
     color: #262626;
+
+    overflow: hidden;
     
 }
 
@@ -294,6 +313,7 @@ body {
 /*  სექციის მაჯვენა ბოლო ნაწილი:  ლინკი */
 
 .cards--read__more {
+    margin-top: 5px;
     display: flex;   
     align-items: center;
 
@@ -469,4 +489,162 @@ gap: 5px;
     text-align: left;
 
 
+}
+/* რესპონსიულობა */
+
+/* ტაბლეტი */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+
+    /* part -4 for tablet */
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1023px;
+}
+.span--display__block{ 
+    display: inline;
+}
+
+
+
+    /* mypart */
+    .card--m{
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        max-width: 1204px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 69px;
+        flex-shrink: 1;
+    
+    
+    }
+    /* თითო სექცია  */
+    .cards--m {
+        max-width: 1204px;
+        width: 100%;
+        height: 368px;
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        border-radius: 20px;
+        gap: 45.5px; 
+        align-items: center;
+    }
+    
+    .cards--m *{
+        flex-shrink: 1;
+    }
+
+    
+ /* სექტორის მარჯვენა ნაწილი მთლიანად */
+ .card--m{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    max-width: 1204px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 69px;
+    flex-shrink: 1;
+}
+/* თითო სექცია  */
+.cards--m {
+    max-width: 1204px;
+    width: 100%;
+    height:auto;
+    display: flex;
+    /* flex-wrap: wrap; */
+    background-color: #ffffff;
+    border-radius: 20px;
+    gap: 45.5px; 
+}
+
+.cards--m *{
+    flex-shrink: 1;
+}
+
+}
+
+/* მობილური*/
+@media screen and (max-width: 768px) {
+
+
+
+    .span--display__block{ 
+        display: inline;
+    }
+    /* ------------------------ */
+
+    .card--m{
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        max-width: 1204px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 69px;
+        flex-shrink: 1;
+    }
+    /* თითო სექცია  */
+    .cards--m {
+        max-width: 1204px;
+        width: 100%;
+        height:auto;
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        border-radius: 20px;
+        gap: 45.5px; 
+    }
+    
+    .cards--m *{
+        flex-shrink: 1;
+    }
+    
+/* სექციის მარცხენა ნაწილი ბექგრაუნდი */
+.cards--m__left1 {
+    max-width: 547px;
+    width: 100%;
+    height: 367px;
+    background-image: url("./images/twogirl.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ 
+
+    
+}
+.cards--m__left2 {
+    max-width: 547px;
+    width: 100%;
+    height: 367px;
+    background-image: url("./images/onegirl.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ 
+
+    
+}
+
+.cards--m__left3 {
+    max-width: 547px;
+    width: 100%;
+    height: 367px;
+    background-image: url("./images/redgirl.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ 
+
+    
+}
+/* footer  */
+.footer--top{
+    flex-direction: column;
+}
+    
 }
