@@ -56,7 +56,6 @@ opacity: 0px;
     color: #4ce0d7;
 }
 
-
 @media (max-width: 768px) {
     .container {
         padding: 0 20px;
@@ -106,7 +105,6 @@ left: 1128px;
 gap: 0px;
 opacity: 0px;
 
-
 }
 
 .trending-first img {
@@ -154,6 +152,7 @@ opacity: 0px;
     cursor: pointer;
     border-radius: 40px;
 }
+
 
 
             
