@@ -1,0 +1,50 @@
+styl.Css - header
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  
+  header {
+      padding: 34px 0 ;
+      margin-bottom: 49px;
+  }
+  
+  .container {
+   max-width: 1240px;
+   margin: 0 auto;
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+  }
+  
+  .navigation ul {
+     display: flex;
+     list-style: none;
+     gap: 40px;
+  }
+  
+  .navigation li {
+    padding: 10px;
+  }
+  
+  .navigation li a {
+    width: 57px;
+    height: 21px;
+    top: 50px;
+    left: 573px;
+    gap: 0px;
+    opacity: 0px;
+    color: #262626;
+  text-decoration: none;
+  }
+
+  h2 span {
+     color: #4CE0D7;
+      color: #8BA9F4;
+  }
+ .container-large {
+  max-width: 1150px;
+  margin: auto;
+
+ }
