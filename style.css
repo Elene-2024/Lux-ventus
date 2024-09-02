@@ -135,14 +135,593 @@ margin-bottom: 47px;
     text-align: left;
 
 }
+/* part -2--------------------------------------------------------------------------------------------------------------------------------------------- */
+.section--third {
+    display: flex;
+    flex-direction: column;
+    max-width: 1270px;
+    width: 100%;
+    padding: 0;
+}
+
+.section--third h2 {
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+    color: #262626;
+    margin-bottom: 48px;
+
+
+    align-self: flex-start;
+
+}
+
+.section--third__topics {
+    display: flex;
+    gap: 9px;
+    margin-bottom: 87.5px;
+    overflow-x: scroll;
+    /* flex-wrap: wrap; */
+    min-height: 291px;
+}
+
+.topic--card {
+    min-width: 204px;
+    max-width: 204px;
+    width: 100%;
+    min-height: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+
+}
+
+.topic--card:hover {
+    background-color: rgb(62, 62, 62);
+    color: white;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.topic--card:hover  h4{
+    color: #ffffff;
+}
+
+.topic--card button{
+    width: 143.81px;
+    height: 35.95px;
+    background-color: #4CE0D7;
+    color: #262626;
+    border-radius: 40px ;
+    opacity: 0px;
+    angle: 0.47 deg;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+
+
+}
+.topic--card button:hover{
+    background: linear-gradient(#e66465, #9198e5);
+    color: #ffffff;
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.topic--card button:active{  
+
+    cursor: wait;
+}
 
 
 
+.section--third__topics h4 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    color:#262626;
+    margin-bottom: 29px;
+    
+
+}
+
+.topic--card__1 {
+    width: 88px;
+    height: 88px;
+    margin-bottom: 20px;
+
+
+}
+.topic--card__2 {
+    width: 103px;
+    height: 103px;
+    padding: 0 17.17px 17.17px 17.17px;
+    margin-bottom: 5px;
+}
+
+.topic--card__3 {
+    width: 100px;
+    height: 100px;
+    padding: 0px 6.26px 0px 6.26px;
+    margin-bottom: 18px;
+}
+
+.topic--card__4 {
+    width: 89px;
+    height: 89px;
+    margin-bottom: 27px;
+}
+
+.topic--card__5 {
+    width: 86px;
+    height: 86px;
+    margin-bottom: 27px;
+
+
+}
+
+.topic--card__6 {
+    width: 102px;
+    height: 102px;  
+    margin-bottom: 24px;
+}
+
+.section--third__end {
+    max-width: 1267px;
+    width: 100%;
+    height: 0;
+    border: 1px solid #BCBCBC;
+    margin-bottom: 52px;
+}
+/* part -3--------------------------------------- */
+.section--fourth {
+    display: flex;
+    flex-direction: column;
+    max-width: 1204px;
+    width: 100%;
+    min-height: 698px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    margin-bottom: 94px;
+    border-radius: 20px;
+
+}
+.section--fourth__top {
+    max-width: 1204px;
+    width: 100%;
+    height: 360.3px;
+    background-image: url(./images/whitecloses.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    margin-bottom: 23px;
+}
+.section--fourth__top button {
+    max-width: 233.95px;
+    width: 100%;
+    height: 36.49px;
+    background-color: #262626;
+    color: #ffffff;
+    border-radius: 40px ;
+    angle: 0.36 deg;
+    margin-top: 23px;
+    margin-left: 47px;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+
+}
+.section--fourth__top button:hover{
+    color: black;
+    background-color: rgba(236, 232, 232, 0.511);
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.section--fourth__mid{
+    display: flex;
+    align-items: center;
+    margin-left: 64px;
+}
+.section--fourth__mid img{
+    margin-right: 20px;
+    margin-bottom: 29.5px;
+}
+.section--fourth__data {
+    display: flex;
+    max-width: 384px;
+    width:100%;
+    justify-content: space-between;
+}
+.section--fourth__data p:first-child{
+    color: #BCBCBC;
+    width: 167px;
+    height: 21px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    
+    
+}
+
+
+.section--fourth__data p:nth-last-of-type(1){
+    max-width: 167px;
+    height: 21px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #BCBCBC;
+
+
+}
+.space--section__4{
+    max-width: 389px;
+    width: 100%;
+    height: 5px;
+    flex-shrink: 100;
+}
+
+.section--fourth__mid h3 {
+    margin-left: 63px;
+    max-width: 216px;
+    height: 23px;
+    font-family: Poppins;
+    margin-bottom: 10px;
+   
+}
+.section--fourth__mid h3 a{
+    text-decoration: none;
+    color: #F25E5E;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.24em;
+    text-align: left;
+}
+
+.section--fourth__text{
+    margin-left: 64px;
+
+}
+.section--fourth__text h2{
+    max-width: 1044px;
+    width: 100%;
+    height: 36px;
+    font-family: Poppins;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 39px;
+    text-align: left;
+    color: #262626;
+    margin-bottom: 23px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+}
+
+.section--fourth__text p {
+    max-width: 1033px;
+    width: 100%;
+    height: 73px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #262626;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+
+}
+.section--fourth .cards--read__more{
+    margin-left: 64px;
+}
+
+/* seaction -5----------- --*/
+
+.section--fifth {
+    display: flex;
+    max-width: 1204px;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    margin-bottom: 88px;
+    
+}
+
+
+.section--fifth__tittle{
+    max-width:370px;
+    width: 100%;
+    height: 36px;
+    margin-bottom: 55px;
+}
+
+.section--fifth__tittle h2{
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+    color: #262626;
+
+}
+.section--fifth__cards{
+    
+    display: flex;
+    max-width: 1204px;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+ 
+}
+/* სექცია 5 მარცხენა ქარდი */
+
+.section--fifth__left{
+    max-width: 579px;
+    width:100%;
+    height: 670px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+
+}
+
+.fifth--left__top{
+    background-image: url("./images/depress.png");
+    max-width: 579.02px;
+    height: 278px;
+    width: 100%;
+    flex-basis: 579px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 23px;
+    
+    border-radius: 20px;
+
+
+}
+.fifth--left__top button {
+    max-width: 175.44px;
+    width: 100%;
+    height: 36.49px;
+    background-color: #262626;
+    border-radius: 40px;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;    
+    margin-top: 20px;
+    margin-left: 34px;
+}
+.fifth--left__top button:hover {
+    color: black;
+    background-color: rgba(235, 227, 227, 0.581);
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.fifth--left__data{
+    display: flex;
+    margin-left: 26px;
+    align-items: center;
+    margin-bottom: 29px;
+
+}
+.fifth--left__data img{
+    margin-right: 13px;
+   
+}
+.fifth--left__profile {
+    max-width: 420px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fifth--left__profile p{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #BCBCBC;
+
+
+}
+.section--fifth__left h2 {
+    max-width: 360px;
+    width: 100%;
+    height: 94px;
+    font-family: Poppins;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 39px;
+    text-align: left;
+    color: #262626;
+    margin-left: 26px;
+    margin-bottom: 2px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+.section--fifth__left >p {
+    max-width: 360px;
+    width: 100%;
+    height: 98px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #262626;
+    margin-bottom: 20px;
+    margin-left: 26px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    
+}
 
 
 
+/* სექცია -5 მარჯვენა ნაწილი */
+.section--fifth__right{
+    max-width: 579px;
+    width:100%;
+    height: 670px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
 
-/* part-4 */
+}
+.section--fifth__cards {
+    display: flex;
+    justify-content: space-between;
+    }
+ 
+.fifth--right__top {
+    background-image: url("./images/girlatbeach.png");
+    max-width: 579.02px;
+    height: 278px;
+    width: 100%;
+    flex-basis: 579px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 23px;
+    border-radius: 20px;
+}
+.fifth--right__top button {
+    max-width: 175.44px;
+    width: 100%;
+    height: 36.49px;
+    background-color: #262626;
+    border-radius: 40px;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;    
+    margin-top: 20px;
+    margin-left: 34px;
+}
+.fifth--right__top button:hover {
+    color: black;
+    background-color: rgba(235, 227, 227, 0.581);
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.fifth--right__data{
+    display: flex;
+    margin-left: 26px;
+    align-items: center;
+    margin-bottom: 29px;
+
+}
+
+.fifth--right__data img{
+    margin-right: 13px;
+   
+}
+.fifth--right__profile {
+    max-width: 420px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fifth--right__profile p{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #BCBCBC;
+
+
+}
+.section--fifth__right h2 {
+    max-width: 360px;
+    width: 100%;
+    height: 94px;
+    font-family: Poppins;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 39px;
+    text-align: left;
+    color: #262626;
+    margin-left: 26px;
+    margin-bottom: 2px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.section--fifth__right >p {
+    max-width: 360px;
+    width: 100%;
+    height: 98px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #262626;
+    margin-bottom: 20px;
+    margin-left: 26px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    
+}
+
+/* part-4------------------------------------------------------------------------------------------------- */
 /* დიდი სექციები ერთად */
 .card--m{
     display: flex;
@@ -343,16 +922,19 @@ margin-bottom: 47px;
 
 .cards--right__top__data{
     display: flex;
+    flex-basis: 100%;
+    max-width: 470px;
+    justify-content:space-between;
 
     
 }
-.space_2{
+/* .space_2{
     max-width: 200px;
     width: 100%;
     height: 5px;
     flex-shrink: 10;
     
-}
+} */
 
 .cards--right__top__data a {
     font-family: Poppins;
@@ -638,6 +1220,9 @@ gap: 5px;
 .span--display__block{ 
     display: inline;
 }
+.section--fifth__cards{
+    flex-direction: column;
+}
 
 
 
@@ -669,6 +1254,9 @@ gap: 5px;
     
     .cards--m *{
         flex-shrink: 1;
+    }
+    .cards--read__more {
+        justify-content: center;
     }
 
     
@@ -716,12 +1304,16 @@ gap: 5px;
     }
 
     /* header */
-.nav{
-    flex-direction: column;
-}
+    .nav{
+        flex-direction: column;
+    }
 
 
     /* ------------------------ */
+    .section--fifth__cards{
+        flex-direction: column;
+    }
+    
 
     .card--m{
         display: flex;
@@ -749,6 +1341,14 @@ gap: 5px;
         flex-shrink: 1;
     }
     
+
+
+
+
+
+.section--third__topics{
+    flex-direction: column;
+}
 /* სექციის მარცხენა ნაწილი ბექგრაუნდი */
 .cards--m__left1 {
     max-width: 547px;
